@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form method="" action="" name="Stud_form" onsubmit="return validate()">
+        <div class=" wrapper">
+
+            <div class="header">
+                <h1>
+                    <center> Book Ticket</center>
+                </h1>
+            </div>
+            <div class="fcontainer1">
+
+                <div class="fitem1 item1" id="fram1">
+                    <center>
+                        <input type="radio" name="Jurney" value="oneway" required>One Way
+                        <input type="radio" name="Jurney" value="Return" required>Return <br />
+                        <input type="text" name="originCity" id="originCity" placeholder="Enter Origin city"
+                            onblur="validateString(this.id)" required><br />
+                        <input type="text" name="destinationCity" id="destinationCity"
+                            placeholder="Enter destination city" onblur="validateString1(this.id)" required><br />
+                        <label class="d">Depart</label>
+                        <input type="date" class="d_date" required><br />
+                        <label class="text">Return</label>
+                        <input type="date" class="r_date" required><br />
+                        <input type="number" class="Pass" placeholder="Passenger" required><br />
+                        <input type="submit" value="Search" " >
+                    </center>
+
+                </div>
+
+                <div class=" fcontainer2">
+                        <div class="fitem2 item3" id="fram3"></div>
+                        <ul><b>Refine Flight Search</b></ul><br />
+                        <input type="range" id="price range" min="0" max="10000"><br />
+                        <div class="number">1000</label></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="flex-container header-dir">
+                    <div class="flex-container flex-item-width divBorder">
+                        <div class="">
+                            <h3>Pune>Delhi>Pune</h3>
+                        </div>
+                        <div>
+                            <label>Depart:</label>
+                            <input type="text" value="10 July" /><br />
+                            <label>Return</label>:</label>
+                            <input type="text" value="10 July" />
+
+                        </div>
+                    </div>
+                    <div class="flex-container divAllBorder">
+                        <div>
+                            <div>
+                                <h3><label>Rs. 95,000.00</label></h3>
+                            </div>
+                            <div class="flex-container">
+                                <div>
+                                    <label>AI-202</label>
+                                    <br>
+                                    <label>PNQ>DEL</label><br />
+
+                                    <label>Depart:</label><input type="text" value="10.00 AM"> <br />
+
+                                    <label>Arrive :</label><input type="text" value="12.00 PM">
+                                </div>
+                                <div>
+                                    <label>AI-203</label>
+                                    <br>
+                                    <label>DEL>PNQ</label><br />
+                                    <label>Depart:</label><input type="text" value="07.00 PM"> <br />
+                                    <label>Arrive :</label><input type="text" value="01.00 AM">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div>
+                                <img src="flight.jpg" width="200px" height="100px" />
+                            </div>
+                            <div>
+                                <input type="button" value="Book this flight" class="search btn">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex-container divAllBorder">
+                        <div>
+                            <div>
+                                <h3><label>Rs. 95,000.00</label></h3>
+                            </div>
+                            <div class="flex-container">
+                                <div>
+                                    <label>AI-202</label>
+                                    <br>
+                                    <label>PNQ>DEL</label><br />
+
+                                    <label>Depart:</label><input type="text" value="10.00 AM"> <br />
+
+                                    <label>Arrive :</label><input type="text" value="12.00 PM">
+                                </div>
+                                <div>
+                                    <label>AI-203</label>
+                                    <br>
+                                    <label>DEL>PNQ</label><br>
+                                    <label>Depart:</label><input type="text" value="07.00 PM"> <br />
+                                    <label>Arrive :</label><input type="text" value="01.00 AM">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div>
+                                <img src="flight.jpg" width="200px" height="100px" />
+                            </div>
+                            <div>
+                                <input type="button" value="Book this flight" class="search btn">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex-container divAllBorder">
+                        <div>
+                            <div>
+                                <h3><label>Rs. 95,000.00</label></h3>
+                            </div>
+                            <div class="flex-container">
+                                <div>
+                                    <label>AI-202</label>
+                                    <br>
+                                    <label>PNQ>DEL</label><br />
+
+                                    <label>Depart:</label><input type="text" value="08.00 AM"> <br />
+
+                                    <label>Arrive :</label><input type="text" value="12.00 PM">
+                                </div>
+                                <div>
+                                    <label>AI-203</label>
+                                    <br>
+                                    <label>DEL>PNQ</label><br>
+                                    <label>Depart:</label><input type="text" value="07.00 PM"> <br />
+                                    <label>Arrive :</label><input type="text" value="01.00 AM">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div>
+                                <img src="flight.jpg" width="200px" height="100px" />
+                            </div>
+                            <div>
+                                <input type="button" value="Book this flight" class="search btn">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
